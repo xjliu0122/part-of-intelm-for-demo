@@ -1,0 +1,114 @@
+#editTripDialogue {
+    width: 100%;
+    min-height: 95%;
+    overflow-y: auto;
+    font-size: 14px;
+    padding: 4rem;
+    footer {
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding-right: 2rem;
+        background: white;
+        width: 100%;
+    }
+    .trip-area {
+        min-width: 1600px;
+    }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        section {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+        h2 {
+            font-weight: bold;
+            color: #3f51b5;
+            text-transform: uppercase;
+        }
+    }
+    .trip-title {
+        button {
+            float: right;
+        }
+    }
+    .trip-table-area {
+        height: 100%;
+        .md-data-table--responsive {
+            //min-height: 300px;
+            overflow-x: unset !important;
+        }
+        .trip-table-row {
+            height: 4rem;
+            border-bottom: none;
+            .checkBoxInRow {
+                position: relative;
+                bottom: 0.5rem;
+                margin-left: 1rem;
+            }
+            .error-address {
+                margin-top: -210px;
+            }
+            .error-message {
+                color: #f44336;
+            }
+
+            ul {
+                overflow-y: auto;
+                max-height: 230px;
+            }
+        }
+        .trip-table-header-row {
+            text-transform: uppercase;
+            th {
+                padding-left: 20px;
+            }
+        }
+        .trip-action-buttons {
+            top: -1rem;
+            min-width: 120px;
+            position: relative;
+        }
+        .aptNoField {
+            top: -1rem;
+            left: -3rem;
+            width: 150px;
+        }
+        tbody {
+            tr {
+                //height: 150px;
+                display: flex;
+                align-items: center;
+                .type {
+                    .md-menu--select-field {
+                        top: 0.2rem;
+                        width: 100%;
+                    }
+                }
+                .location {
+                    margin-top: -1.8rem;
+                }
+            }
+        }
+    }
+    .information-area {
+        height: 100%;
+        .job-info {
+            width: 80%;
+            margin-left: 50px;
+            .fixedAmoutField {
+                width: 100%;
+                top: -30px;
+            }
+            h2 {
+                font-weight: bold;
+                color: #3f51b5;
+                text-transform: uppercase;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

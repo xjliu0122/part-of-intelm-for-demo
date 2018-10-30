@@ -1,0 +1,42 @@
+.setting-view-container {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    font-size: 16px;
+    .select-tab {
+        width: 100%;
+        padding: 6rem 2rem 6rem 2rem;
+        span {
+            font-size: 16px;
+        }
+        .tab-header {
+            background-color: aliceblue;
+        }
+        .company-fields {
+            padding: 0px !important;
+        }
+        .tab-view-container {
+            // overflow-y: auto;
+            margin-bottom: 6rem;
+        }
+        .qbo-auth-viewReducer {
+            cursor: pointer;
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .tab-view-container {
+        background-color: white;
+        padding: 2rem;
+        width: unset;
+        margin: 0;
+        .col-12 {
+            // width: unset;
+
+            &.billing {
+                width: 100% !important;
+            }
+        }
+    }
+}

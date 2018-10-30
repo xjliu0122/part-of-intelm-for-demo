@@ -1,0 +1,40 @@
+#idSignatureWindow {
+    width: 500px;
+    height: auto;
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 8px 2rem 8px;
+        h2 {
+            text-transform: uppercase;
+            color: #3f51b5;
+            font-weight: bold;
+        }
+    }
+    .sig-pod-container {
+        position: relative;
+        .signature-pic {
+            height: 300px;
+        }
+        .signature-pad {
+            height: 130px;
+        }
+        .preview-button {
+            float: left;
+            margin-bottom: 2rem;
+        }
+        .open-doc-button{
+            float: left;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+        }
+    }
+
+    #idNoteWindow {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #idNoteWindowButton {
+        margin-left: 8px;
+    }
+}

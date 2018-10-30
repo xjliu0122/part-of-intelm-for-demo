@@ -1,0 +1,114 @@
+.company-view-container {
+    flex: 1 1 auto;
+
+    .company-fields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 24px;
+
+        .md-text-field-container {
+            width: 45%;
+            // margin: 24px;
+        }
+
+        .md-menu--select-field {
+            margin-top: -16px;
+
+            label {
+                margin-top: 16px;
+            }
+
+            .md-icon-text {
+                font-size: 14px;
+                margin-top: 6px;
+            }
+            .md-select-field {
+                border-bottom: 1px solid #dedfe2;
+                box-shadow: none;
+
+                .md-icon-text {
+                    margin-left: -24px;
+                }
+            }
+
+            ul {
+                margin-top: -21px;
+            }
+        }
+
+        .md-layover {
+            width: 45%;
+
+            .md-text-field-container {
+                width: 100% !important;
+            }
+        }
+
+        .selected-fields-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            // div {
+            //     width: 100%;
+            // }
+
+            .md-text-field-container {
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .field {
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .md-layover {
+                margin-bottom: 24px;
+                width: 100%;
+            }
+        }
+
+        .permit-group {
+            width: 45% !important;
+            display: flex;
+            align-items: center;
+
+            .permit-title {
+                margin-right: 40px;
+                font-size: 13px;
+                color: #969ba5;
+            }
+        }
+
+        .md-selection-control-container {
+            margin-left: 12px;
+        }
+
+        .service-group {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+
+            .service-title {
+                margin-right: 40px;
+                font-size: 13px;
+                color: #969ba5;
+                text-transform: capitalize;
+            }
+
+        }
+        .register-actions {
+            margin-top: 24px;
+            padding: 0px;
+            width: 100%;
+
+            button {
+                //height: 50px;
+                width: 250px;
+            }
+        }
+
+    }
+}

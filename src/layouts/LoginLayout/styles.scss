@@ -1,0 +1,133 @@
+.login-view-layout {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+        max-width: 1280px;
+        min-width: 900px;
+    }
+
+    .login-container {
+        margin: 24px auto;
+        background: #edeeef;
+
+        .md-card-title--title {
+            text-align: center;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #5a5f67;
+        }
+        .login-fields-container {
+            display: flex;
+
+            .fields-layout {
+                width: 50%;
+                margin-right: 24px;
+                padding: 24px;
+                background: #fff;
+                //height: 90%;
+                border: 1px solid #f4f5f6;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+
+                .login-fields-content {
+                    flex: 1;
+                }
+                .login-fields-footer {
+                    display: flex;
+                    flex-direction: column;
+                    height: 105px;
+                    .password-help {
+                        float: right;
+                        position: relative;
+                        margin-top: 16px;
+                        margin-left: 10px;
+                    }
+                    .resend-verification {
+                        float: right;
+                        position: relative;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .info-layout {
+                width: 50%;
+                padding: 24px;
+                background: #fff;
+                height: auto !important;
+                border: 1px solid #f4f5f6;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    padding-bottom: 24px;
+                    border-bottom: 1px solid #c5e1a5;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 24px;
+
+                    li {
+                        display: flex;
+                        // align-items: center;
+
+                        i {
+                            color: #689f38;
+                            margin-right: 8px;
+                            font-size: 18px;
+                            padding-top: 4px;
+                        }
+                    }
+                }
+                .login-fields-content {
+                    flex: 1;
+                }
+                .login-fields-footer {
+                    display: flex;
+                    flex-direction: column;
+                    height: 105px;
+                    .help-contact {
+                        float: right;
+                        position: relative;
+                        margin-top: 16px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .md-text-field-container {
+            margin: 16px;
+
+            input {
+                margin-right: 24px;
+            }
+
+            hr {
+                margin-right: 24px;
+            }
+        }
+
+        .md-text--theme-primary {
+            color: rgba(0, 0, 0, 0.54);
+        }
+
+        .password-field {
+            button {
+                display: none;
+            }
+        }
+
+        .login-actions {
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

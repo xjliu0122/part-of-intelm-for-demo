@@ -1,0 +1,174 @@
+.main-app-container {
+    padding: 1rem;
+    flex: 1 1 auto; //background: ;
+    overflow: auto;
+    display: flex;
+    //width: 100%;
+    padding: 15px 10% 15px 10%;
+    position: relative;
+}
+
+@media (max-width: 1700px) {
+    .main-app-container {
+        padding: 15px 2% 15px 2%;
+    }
+}
+
+.main-app-layout {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+.no-padding-left-right {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.md-grid {
+    width: 100%;
+}
+
+.date-picker-popup {
+    z-index: 9998;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    /*--   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  -- */
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+
+.md-text-field-container {
+    width: 100%;
+}
+
+.baseline-align {
+    vertical-align: baseline;
+}
+
+a {
+    color: #3f51b5;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/*-- our cleafix hack -- */
+
+.row {
+    width: 100%;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.md-menu--select-field {
+    margin-top: -16px;
+    label {
+        margin-top: 16px;
+    }
+    .md-icon-text {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .md-select-field {
+        border-bottom: 1px solid #dedfe2;
+        box-shadow: none;
+        .md-icon-text {
+            margin-left: -24px;
+        }
+    }
+    ul {
+        margin-top: -21px;
+    }
+}
+
+/*-- some extra column content styling --*/
+
+.mui-table-header-cell-fontsize {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.clickable-link {
+    width: 100%;
+    color: #3f51b5;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.status-cell {
+    text-transform: capitalize;
+}
+
+.status-cell[type~="!"] {
+    color: red;
+}
+.status-cell[type~="No"] {
+    color: red;
+}

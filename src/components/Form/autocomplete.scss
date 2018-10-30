@@ -1,0 +1,50 @@
+.autocomplete {
+    .md-chip-icon--rotate {
+        transform: none;
+    }
+
+    .md-chip {
+        background: #DEDFE2;
+        color: #3E4148;
+
+        margin-right: 8px;
+        margin-bottom: 8px;
+
+        i {
+            color: #B9BBC1;
+            cursor: pointer;
+        }
+
+        &.enabled {
+            background: #F4F5F6;
+        }
+    }
+    .md-autocomplete-list.no-results {
+        color: #6E727C;
+        background: #EDEEEF;
+        &::after {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            content: 'No Results Found';
+            height: 40px;
+        }
+    }
+
+    .add-item {
+        display: flex;
+        align-items: center;
+        margin: 16px 0px;
+        
+        .icon-add-item {
+            color: #ffffff;
+            background: #3f51b5;
+            font-size: 12px;
+            border-radius: 100%;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    }
+    
+}

@@ -1,0 +1,74 @@
+.manage-view-container {
+    width: 100%;
+    margin-top: 70px;
+    .header-row {
+        #menuOptions {
+            .md-btn--icon {
+                height: 50px;
+                width: 50px;
+                border-radius: 0% !important;
+            }
+        }
+        .editButton {
+            float: right;
+        }
+    }
+
+    #companyDetailDialogue {
+        width: 50%;
+        max-width: 850px;
+        display: relative;
+        color: #9fa4b8;
+        .md-dialog-content--padded {
+            padding: 2rem;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        label {
+            color: #38393b;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                text-transform: uppercase;
+                color: #3f51b5;
+                font-weight: bold;
+            }
+        }
+        .col-6 {
+            display: flex;
+
+            div {
+                font-size: 14px;
+            }
+        }
+
+        .btn-close-actions {
+            margin-top: 24px;
+            button {
+                color: #ff6f00;
+            }
+        }
+    }
+}
+.client-details-Panel {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .panel-tile {
+        font-weight: 500;
+        color: #3f51b5;
+    }
+}
+.word-wrap {
+    word-wrap: normal;
+}
+.client-type-radio-group {
+    padding-top: 1rem;
+}

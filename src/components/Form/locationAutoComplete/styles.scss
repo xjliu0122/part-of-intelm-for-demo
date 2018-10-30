@@ -1,0 +1,16 @@
+.locationSuggestionAddress {
+    position: relative;
+    width: 100%;
+    color: #5a5f67;
+}
+
+.locationSuggestionName {
+    position: relative;
+    width: 100%;
+}
+
+.locationAutoCompleteEditDialog {
+    .md-dialog-container.md-overlay {
+        z-index: 30;
+    }
+}

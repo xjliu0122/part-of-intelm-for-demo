@@ -1,0 +1,41 @@
+#manageForm {
+    width: 800px;
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+
+    .manageLOcationFields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .md-text-field-container {
+            width: 45%;
+        }
+
+        .md-layover {
+            width: 45%;
+
+            .md-text-field-container {
+                width: 100% !important;
+            } 
+        }
+    }
+
+    .btn-manage-actions {
+        margin-top: 24px;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            margin-left: 24px;
+        }
+    }
+}

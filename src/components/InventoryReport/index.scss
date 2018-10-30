@@ -1,0 +1,29 @@
+.manage-view-container {
+    width: 100%;
+    margin-top: 70px;
+
+    .header-row {
+        #menuOptions {
+            .md-btn--icon {
+                height: 50px;
+                width: 50px;
+                border-radius: 0% !important;
+            }
+        }
+        .editButton {
+            float: right;
+        }
+    }
+}
+.client-details-Panel {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;    
+    .panel-tile {
+        font-weight: 500;
+        color: #3f51b5;
+    }
+}
+.word-wrap {
+    word-wrap: normal;
+}

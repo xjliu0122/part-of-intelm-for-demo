@@ -1,0 +1,19 @@
+.manage-user-view-container {
+    width: 100%;
+    .header-row {
+        #menuOptions {
+            .md-btn--icon {
+                height: 50px;
+                width: 50px;
+                border-radius: 0% !important;
+            }
+        }
+        .editButton {
+            float: right;
+        }
+    }
+}
+
+.word-wrap {
+    word-wrap: normal;
+}

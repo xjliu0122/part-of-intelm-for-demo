@@ -1,0 +1,88 @@
+#loadQuoteViewDetailDialogue {
+    width: 800px;
+    color: #9fa4b8;
+    padding: 2rem;
+
+    .md-dialog-content {
+        min-height: 600px !important;
+    }
+    li {
+        list-style-type: none;
+    }
+    label {
+        color: #38393b;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 0 20px;
+        h2 {
+            text-transform: uppercase;
+            color: #3f51b5;
+            font-weight: bold;
+        }
+    }
+    .load-detail-view-main-area {
+        padding: 20px 20px 0 20px;
+        font-size: 14px;
+    }
+    .load-detail-view-footer {
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        height: 50px;
+    }
+    .col-6 {
+        display: flex;
+        padding-top: 10px;
+    }
+    .dimension-fields {
+        padding-right: 15px;
+    }
+    .option-field {
+        .col-12 {
+            display: flex;
+            padding-top: 10px;
+            label {
+                margin-right: 24px;
+            }
+            div {
+                margin-right: 24px;
+            }
+        }
+        .load-options {
+            padding-left: 5px;
+            text-transform: capitalize;
+        }
+    }
+
+    .remark {
+        display: flex;
+    }
+    .container-field {
+        margin: 16px 0px;
+        border-top: 1px solid #dedfe2;
+        border-bottom: 1px solid #dedfe2;
+        .container-table {
+            li {
+                display: flex;
+                div {
+                    width: 25%;
+                    h4 {
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-close-actions {
+        button {
+            color: #ff6f00;
+        }
+    }
+}

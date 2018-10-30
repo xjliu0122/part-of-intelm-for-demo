@@ -1,0 +1,40 @@
+.dash-view-container {
+    width: 100%;
+    margin-top: 70px;
+
+    .trip-summary-field {
+        display: flex;
+        flex-direction: row;
+        .prefix {
+            color: #3f51b5;
+            padding-right: 2rem;
+        }
+        .stop-item {
+            padding-right: 2rem;
+            display: flex;
+            flex-direction: row;
+            .stop-index {
+                color: cadetblue;
+                padding-right: 0.5rem;
+            }
+            .stop-name {
+                color: #3f51b5;
+                font-weight: bold;
+                padding-right: 1rem;
+                cursor: pointer;
+            }
+            .stop-time {
+                padding-right: 1rem;
+                .actual-time {
+                    color: green;
+                }
+            }
+        }
+    }
+    .header-row {
+        margin-bottom: 2rem;
+        .select-option {
+            margin-right: 1rem;
+        }
+    }
+}

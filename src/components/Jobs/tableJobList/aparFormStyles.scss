@@ -1,0 +1,132 @@
+#editAPARDialogue {
+    width: 100%;
+    top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2rem;
+    // .editAPARDialogueContent {
+    //     max-height: none !important;
+    //     min-height: 800px;
+    //     overflow: auto !important;
+    //     footer {
+    //         height: 50px;
+    //         position: fixed;
+    //         bottom: 0;
+    //         left: 0;
+    //         padding-right: 2rem;
+    //         background: white;
+    //         width: 100%;
+    //     }
+    // }
+    // .row{
+    //     display: table-row;
+    // }
+    .form-footer {
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding-right: 2rem;
+        background: white;
+        width: 100%;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        section {
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+        h2 {
+            font-weight: bold;
+            color: #3f51b5;
+            text-transform: uppercase;
+        }
+    }
+    .payable-items-for-receivable-editing {
+        width: 28%;
+        padding-left: 2%;
+        .title {
+            font-size: 18px;
+            color: #3f51b5;
+            text-transform: capitalize;
+        }
+        .quoted-title {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #3f51b5;
+            margin-top: 2rem;
+        }
+        .label {
+            padding-top: 10px;
+        }
+        .trip-section {
+            margin-top: 2rem;
+        }
+        .note-label {
+            margin-top: 1rem;
+            color: #3f51b5;
+        }
+    }
+
+    .table-area {
+        height: 100%;
+        width: 70% !important;
+        .md-data-table--responsive {
+            //min-height: 300px;
+            overflow-x: unset !important;
+        }
+        .table-row {
+            height: 4rem;
+            border-bottom: none;
+            .checkBoxInRow {
+                position: relative;
+                bottom: 0.5rem;
+            }
+            .error-address {
+                margin-top: -210px;
+            }
+            .error-message {
+                color: #f44336;
+            }
+        }
+        .table-header-row {
+            text-transform: uppercase;
+            th {
+                padding-left: 20px;
+            }
+        }
+        .action-buttons {
+            float: right;
+            min-width: 120px;
+            position: relative;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .suggestion-position {
+            margin-top: -24px;
+        }
+        .md-select-field {
+            top: 5px;
+        }
+        .trip-no-field{
+            margin-top: -16px;
+        }
+        tbody {
+            tr {
+                .type {
+                    .md-menu--select-field {
+                        top: 0.2rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

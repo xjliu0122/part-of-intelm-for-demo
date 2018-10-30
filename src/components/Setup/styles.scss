@@ -1,0 +1,14 @@
+.setup-view-container {
+    flex: 1 1 auto;
+    padding: 24px 10%;
+
+    .setup-container {
+        margin: 34px;
+        .md-card-text {
+            padding: 48px;
+        }
+        .input-verification-code{
+            max-width: 200px;
+        }
+    }
+}

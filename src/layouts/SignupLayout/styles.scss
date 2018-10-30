@@ -1,0 +1,88 @@
+
+.signup-view {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    form {
+        max-width: 1280px;
+        min-width: 900px;
+    }
+
+  .signup-form-container {
+    margin: 24px auto;
+    background: #edeeef;
+
+    .md-card-title--title {
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #5a5f67;
+    }
+
+    .sign-up-fields {
+        display: flex;
+
+        .fields-layouts {
+            width: 100%;
+            margin-right: 24px;
+            margin-left: 24px;
+            padding: 24px;
+            background: #fff;
+            border: 1px solid #f4f5f6;
+            border-radius: 5px;
+
+            .signup-btn-actions {
+                width: 100%;
+                display: flex;
+                margin-top: 16px;
+
+                .btn-signup {
+                    width:50%
+                }
+
+                .back-login {
+                    width: 50%;
+                    margin-left: 16px;
+                }
+            }
+        }
+        
+    }
+
+    .md-text-field-container {
+      margin: 16px;
+
+    input {
+          margin-right: 24px;
+      }
+
+      hr {
+        margin-right: 24px;
+      }
+    }
+
+    .md-text--theme-primary {
+      color: rgba(0,0,0, 0.54)
+    }
+
+    .password-field {
+      button {
+        display: none;
+      }
+    }
+
+    .signup-actions {
+      display: flex;
+      flex-direction: column;
+
+      .btn-signup {
+        width: 100%;
+      }
+    }
+}
+}
+
+

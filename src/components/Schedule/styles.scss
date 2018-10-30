@@ -1,0 +1,194 @@
+.trip-management-view-container {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    .col-6 {
+        padding: 0 12px 0 12px;
+    }
+    .col-12 {
+        padding: 0 12px 0 12px;
+    }
+    .col-3 {
+        padding: 0 12px 0 12px;
+    }
+    .col-2 {
+        padding: 0 12px 0 12px;
+    }
+    .col-4 {
+        padding: 0 12px 0 12px;
+    }
+    .trip-list-container {
+        margin: 2rem 0 2rem 0;
+
+        .trip-summary-field {
+            display: flex;
+            flex-direction: row;
+            .prefix {
+                color: #3f51b5;
+                padding-right: 2rem;
+            }
+            .stop-item {
+                padding-right: 2rem;
+                display: flex;
+                flex-direction: row;
+                .stop-index {
+                    color: cadetblue;
+                    padding-right: 0.5rem;
+                }
+                .stop-name {
+                    color: #3f51b5;
+                    font-weight: bold;
+                    padding-right: 1rem;
+                    cursor: pointer;
+                }
+                .stop-time {
+                    padding-right: 1rem;
+                }
+            }
+        }
+        .bids-details-Panel {
+            margin-left: 5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            .panel-tile {
+                margin-top: 1rem;
+                font-weight: 500;
+                color: #3f51b5;
+            }
+            .bids-details-container {
+                margin: 1rem 0 2rem 0;
+            }
+            .tripActionContainer {
+                z-index: 999;
+                position: fixed;
+            }
+        }
+        #idTripNoteWindow {
+            width: 500px;
+            height: 400px;
+            .modal-header {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem 8px 2rem 8px;
+                h2 {
+                    text-transform: uppercase;
+                    color: #3f51b5;
+                    font-weight: bold;
+                }
+            }
+            #idNoteWindow {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            #idNoteWindowButton {
+                margin-left: 8px;
+            }
+        }
+    }
+    .top-level-card {
+        flex: 1 1 auto;
+        width: 100%;
+        .header-row {
+            width: 100%;
+            position: "relative";
+            margin-top: 2rem;
+            .md-btn--icon {
+                border-radius: 0% !important;
+                margin-right: 2rem;
+            }
+            .job-filter-btn {
+                margin-right: 30px;
+            }
+            .filterDescription {
+                width: 200px;
+                display: inline;
+                text-transform: capitalize;
+                color: rgba(0, 0, 0, 0.54);
+            }
+            .header-row-menu {
+                margin-right: 2rem;
+                height: 40px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            height: 38px;
+            label {
+                margin-right: 16px;
+            }
+            i {
+                color: #ffffff;
+            }
+        }
+        .trip-list-container {
+            .trip-summary-field {
+                display: flex;
+                flex-direction: row;
+                .stop-item {
+                    padding-right: 2rem;
+                    display: flex;
+                    flex-direction: row;
+                    .stop-index {
+                        color: cadetblue;
+                        padding-right: 0.5rem;
+                    }
+                    .stop-name {
+                        color: #3f51b5;
+                        font-weight: bold;
+                        padding-right: 1rem;
+                        cursor: pointer;
+                    }
+                    .stop-time {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+        .custom-filter-container {
+            margin-top: 2rem;
+            padding: 2rem 2rem 2rem 2rem;
+            .search-button {
+                margin-right: 2rem;
+            }
+            #select-job-status-menu {
+                padding-top: 35px;
+            }
+            #select-job-type-menu {
+                padding-top: 35px;
+            }
+        }
+        .trip-map-container {
+            width: 600px;
+            height: 600px;
+            position: absolute; // border: 1px solid #ffffff;
+            z-index: 99;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            //bottom: 10%;
+            right: 10%;
+            background: white;
+            .header-section {
+                width: 100%;
+                height: 10%;
+                display: relative;
+            }
+            .trip-map-section {
+                bottom: 0;
+                width: 100%;
+                height: 90%;
+                display: relative;
+            }
+        }
+    }
+}
+
+.stop-signature {
+    cursor: pointer;
+    color: #3f51b5;
+}

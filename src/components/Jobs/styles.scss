@@ -1,0 +1,302 @@
+.job-view-container {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    .col-6 {
+        padding: 0 12px 0 12px;
+    }
+    .col-12 {
+        padding: 0 12px 0 12px;
+    }
+    .col-3 {
+        padding: 0 12px 0 12px;
+    }
+    .col-2 {
+        padding: 0 12px 0 12px;
+    }
+    .col-4 {
+        padding: 0 12px 0 12px;
+    }
+    .job-list-container {
+        margin: 2rem 0 2rem 0;
+
+        .job-details-PagingPanel {
+            margin-left: 5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            .panel-tile {
+                font-weight: 500;
+                color: #3f51b5;
+            }
+            .job-trip-container {
+                margin: 1rem 0 2rem 0;
+                .trip-summary-field {
+                    display: flex;
+                    flex-direction: row;
+                    .stop-item {
+                        padding-right: 2rem;
+                        display: flex;
+                        flex-direction: row;
+                        .stop-index {
+                            color: cadetblue;
+                            padding-right: 0.5rem;
+                        }
+                        .stop-name {
+                            color: #3f51b5;
+                            font-weight: bold;
+                            padding-right: 1rem;
+                            cursor: pointer;
+                        }
+                        .stop-time {
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .job-loads-container-row {
+                cursor: pointer;
+            }
+            .tripActionContainer {
+                z-index: 999;
+                position: fixed;
+            }
+        }
+    }
+    .top-level-card {
+        flex: 1 1 auto;
+        width: 100%;
+        .header-row {
+            width: 100%;
+            position: "relative";
+            margin-top: 2rem;
+            .md-btn--icon {
+                border-radius: 0% !important;
+                margin-right: 2rem;
+            }
+            .job-filter-btn {
+                margin-right: 30px;
+            }
+            .filterDescription {
+                width: 200px;
+                display: inline;
+                text-transform: capitalize;
+                color: rgba(0, 0, 0, 0.54);
+            }
+            .header-row-menu {
+                margin-right: 2rem;
+                height: 40px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            height: 38px;
+            label {
+                margin-right: 16px;
+            }
+            i {
+                color: #ffffff;
+            }
+        }
+        .custom-filter-container {
+            margin-top: 2rem;
+            margin-left: 0;
+            padding: 2rem 2rem 2rem 2rem;
+            .search-button {
+                margin-right: 2rem;
+            }
+            #select-job-status-menu {
+                padding-top: 35px;
+            }
+            #select-job-type-menu {
+                padding-top: 35px;
+            }
+        }
+        #editJobForm {
+            flex: 1 1 auto; //background: ;
+            // overflow: auto;
+            display: flex;
+            flex-flow: column;
+            align-items: stretch;
+            height: 100%;
+            width: 70%;
+            display: flex;
+            flex: 1 1 auto; //background: ;
+            overflow: auto; //justify-content: center;
+            transform: none;
+            left: 15%;
+            top: 2.5%;
+            #editContForm {
+                flex: 1 1 auto; //background: ;
+                // overflow: auto;
+                display: flex;
+                flex-flow: column;
+                align-items: stretch;
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex: 1 1 auto; //background: ;
+                overflow: auto; //justify-content: center;
+                transform: none;
+                left: 15%;
+                top: 0;
+                .md-dialog-content--padded {
+                    height: 100%;
+                }
+            }
+            .header-title {
+                position: relative;
+                height: 4rem;
+                font-weight: bold;
+                left: 5%;
+                padding: 2rem 0 5rem 12px;
+                text-transform: uppercase;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                h2 {
+                    color: #3f51b5;
+                }
+                i {
+                    font-size: 32px;
+                    color: #6e727c;
+                    cursor: pointer;
+                }
+            }
+            .main-edit-workspace {
+                flex: 1 1 auto;
+                width: 90%;
+                margin: auto;
+                padding: 0 0 70px 0;
+                .error-label {
+                    color: #f44336;
+                    font-size: 12px;
+                }
+                .col-6 {
+                    &.error {
+                        hr {
+                            background: #f44336;
+                        }
+                    }
+                }
+                ul {
+                    overflow-y: auto;
+                    max-height: 230px;
+                }
+                .options-group {
+                    margin-left: -1rem;
+                    display: flex;
+                }
+                .md-text-field-divider-container {
+                    width: 100%;
+                }
+                .md-menu--select-field {
+                    margin-top: -16px;
+                    width: 100%;
+                    label {
+                        margin-top: 16px;
+                    }
+                    .md-icon-text {
+                        font-size: 14px;
+                        margin-top: 6px;
+                    }
+                    .md-select-field {
+                        border-bottom: 1px solid #dedfe2;
+                        box-shadow: none;
+                        .md-icon-text {
+                            margin-left: -24px;
+                        }
+                    }
+                    ul {
+                        margin-top: -21px;
+                    }
+                }
+                .containerError {
+                    margin-left: 12px;
+                    font-size: 12px;
+                    color: #f44336;
+                }
+            }
+            .form-footer {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: white;
+                width: 100%;
+            }
+            .container-table {
+                padding: 12px 12px 0 12px;
+
+                > h4 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #3f51b5;
+                }
+            }
+            .tableInputRoot {
+                width: 100%;
+                &::after {
+                    background-color: #3f51b5;
+                }
+                > input {
+                    width: 100%;
+                }
+            }
+            .section-title {
+                font-size: 18px;
+                padding: 1rem 0rem 2rem 1rem;
+            }
+            .options-title {
+                font-size: 13px;
+                color: rgba(0, 0, 0, 0.54);
+            }
+        }
+    }
+    #extraChargeForm {
+        width: 1000px;
+        top: 50% !important;
+        min-height: 50%;
+        overflow: auto;
+        padding: 2rem;
+        .modal-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            i {
+                cursor: pointer;
+            }
+            h2 {
+                font-weight: bold;
+                color: #3f51b5;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+}
+
+#confirmation-dialog {
+    width: 600px;
+    height: 300px;
+    .confirmation-dialog-title {
+        color: orange;
+        font-size: 2rem;
+    }
+    .confirmation-dialog-content {
+        color: grey;
+        font-size: 1.2rem;
+    }
+    .confirmation-dialog-footer {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+}

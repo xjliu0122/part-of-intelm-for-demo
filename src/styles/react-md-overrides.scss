@@ -1,0 +1,194 @@
+//React MD Style Overides
+
+.md-btn {
+    &.success, &.default, &.default.delete, &.primary, &.lime {
+        &.md-btn--text {
+            min-width: 120px;
+            min-height: 36px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        &:disabled {
+            background: rgba(0,0,0,.12);
+            color: rgba(0,0,0,.38);
+        }
+    }
+
+    &.success {
+        background-color: #8bc34a;
+        color: #FFF;
+    }
+
+    &.lime {
+        background-color: #76FF03;
+        color: #33691E;
+
+        &:disabled {
+            background-color: #76FF03;
+            color: rgba(0,0,0,.38);
+        }
+    }
+
+    &.default {
+        background-color: #edeeef;
+        color: #6e727c;
+
+        &.delete {
+            color: #ff5722;
+            margin-left: 0px;
+        }
+    }
+
+    &.primary {
+        background-color: #3f51b5;
+        color: #FFF;
+
+        &.delete {
+            background-color: #FF5722;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.checkbox {
+    .md-selection-control-container {
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    .md-btn--icon {
+        padding: 0px;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+.md-divider--text-field::after {
+  background: #3f51b5;
+}
+
+.md-floating-label--active {
+  color: #3f51b5;
+}
+
+.md-divider--text-field-error,
+.md-divider--text-field-error:after {
+  background: #f44336;
+}
+
+// .md-text-field-message-container {
+//   display: none;
+// }
+
+.md-text-field-message-container--error {
+  display: flex;
+}
+
+.react-md-modal {
+    padding: 24px;
+    width: 75%;
+    max-width: 768px;
+    cursor: default;
+
+    .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-transform: capitalize;
+        margin: 0px;
+    }
+
+    .close {
+        color: #B9BBC1;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    // label {
+    //     text-transform: capitalize;
+    // }
+
+    .md-dialog-content {
+        overflow: visible;
+        padding: 0px;
+
+        .content {
+            padding: 24px 0px;
+        }
+    }
+}
+
+.md-switch-thumb--on {
+    background: #3f51b5;
+}
+
+.md-switch-track {
+    margin-left: 0;
+}
+
+.md-switch-track--on {
+    background: #E0F7FA;
+}
+
+.md-picker {
+    *, :after, :before {
+        box-sizing: border-box;
+    }
+
+    .md-title,
+    .md-text--theme-primary {
+        color: #3f51b5;
+    }
+
+    .md-picker-header {
+        // background: #00BCD4;
+        font-size: 24px;
+
+        .md-display-1 {
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+
+    .md-calendar-controls {
+        h4 {
+            margin: 0px;
+        }
+    }
+
+    .md-dialog-footer--inline {
+        padding: 8px;
+    }
+}
+
+// Default responsive sizing doesn't make sense, at greater resolutions it reduces text to 13px
+.md-text-field {
+    font-size: 16px;
+    &::placeholder {
+        color: #969ba5;
+    }
+}
+.md-chip {
+    background: #DEDFE2;
+    .md-chip-text, .md-chip-text--hover {
+        color: #3E4148;
+    }
+
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    i {
+        color: #B9BBC1;
+    }
+
+    &.enabled {
+        background: #edeeef;
+    }
+}

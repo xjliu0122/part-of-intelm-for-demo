@@ -1,0 +1,41 @@
+.billing-view-container {
+    flex: 1 1 auto;
+
+    .label-name {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #6e727c;
+        margin-right: 48px;
+        width: 150px;
+    }
+
+    .update {
+        span {
+            margin-right: 70px;
+            text-transform: capitalize;
+            padding-left: 16px;
+        }
+    }
+
+    .company-info {
+        // padding: 0 24px;
+        button {
+            margin-left: 12px;
+        }
+    }
+
+    .info-field {
+        margin: 24px 0px;
+        display: flex;
+    }
+
+    .update-group-field {
+        .col-6 {
+            // padding: 0 24px;
+        }
+
+        button {
+            margin-left: 12px;
+        }
+    }
+}

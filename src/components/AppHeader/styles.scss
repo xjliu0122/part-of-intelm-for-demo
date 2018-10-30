@@ -1,0 +1,72 @@
+.app-top {
+    background: #edeeef;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+
+    .tabContainer {
+    }
+    .header-img {
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .md-tab {
+        height: 50px;
+        //padding-bottom: -40%;
+    }
+    .md-tabs {
+        padding-left: 0px !important;
+    }
+    li:hover {
+        background: #e4e5e7;
+    }
+    .md-tab--active {
+        .md-tab-label {
+            font-size: 16px;
+            color: #3f51b5;
+        }
+    }
+    .md-tab--inactive {
+        .md-tab-label {
+            font-size: 16px;
+            color: #3f51b5;
+        }
+    }
+    .md-tab-indicator {
+        background: #3f51b5;
+        height: 4px !important;
+    }
+
+    .logout-menu {
+        position: absolute;
+        right: 36px;
+        .header-avatar-dropdown-list{
+            z-index: 999;
+        }
+        .md-avatar--grey {
+            background: #edeeef;
+
+            .md-avatar-content {
+                color: #3f51b5;
+            }
+        }
+
+        ul {
+            margin-top: 45px;
+        }
+
+        span {
+            font-size: 16px;
+            color: #3f51b5;
+        }
+
+        i {
+            color: #3f51b5;
+        }
+    }
+}

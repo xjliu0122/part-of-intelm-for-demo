@@ -1,0 +1,30 @@
+.field {
+    width: 100%;
+
+    .md-floating-label {
+        color: #6e727c;
+        .optional {
+            font-style: italic;
+            color: #b9bbc1;
+        }
+    }
+
+    .md-floating-label--active {
+        color: #3f51b5;
+        .optional {
+            color: #3f51b5;
+        }
+    }
+
+    .textField {
+        // react-md: TextField of type TextArea (with rows) label breaks when inside a DOM Node without display: flex 
+        // https://github.com/mlaursen/react-md/issues/365
+        display: flex;
+    }
+
+    .switch {
+        label {
+            font-size: 16px;
+        }
+    }
+}

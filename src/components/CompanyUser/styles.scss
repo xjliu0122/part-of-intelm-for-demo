@@ -1,0 +1,26 @@
+.setup-view-container {
+    flex: 1 1 auto;
+    padding: 24px 10%;
+
+    .select-tab {
+        display: flex;
+
+        div {
+            width: 200px;
+            background: #dedfe2;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2px;
+            color: #5a5f67;
+            cursor: pointer;
+
+            &.on {
+                color: #689f38;
+                border-bottom: 2px solid #689f38;
+            }
+        }
+    }
+
+}
